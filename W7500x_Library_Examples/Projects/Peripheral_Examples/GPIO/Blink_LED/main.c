@@ -50,13 +50,13 @@ int main()
 //    PAD_AFConfig(PAD_PA,GPIO_Pin_2, PAD_AF2); // PAD Config - CLKOUT used 3nd Function
     
     /* GPIO LED(R) Set */
-    GPIO_InitDef.GPIO_Pin = GPIO_Pin_8; // Set to Pin_5 (LED(R))
+    GPIO_InitDef.GPIO_Pin = GPIO_Pin_8; // Set to Pin_8 (LED(R))
     GPIO_InitDef.GPIO_Mode = GPIO_Mode_OUT; // Set to Mode Output
     GPIO_Init(GPIOC, &GPIO_InitDef);
     PAD_AFConfig(PAD_PC,GPIO_Pin_8, PAD_AF1); // PAD Config - LED used 2nd Function
 	
     /* GPIO LED(G) Set */
-    GPIO_InitDef.GPIO_Pin = GPIO_Pin_9; // Set to Pin_5 (LED(G))
+    GPIO_InitDef.GPIO_Pin = GPIO_Pin_9; // Set to Pin_9 (LED(G))
     GPIO_InitDef.GPIO_Mode = GPIO_Mode_OUT; // Set to Mode Output
     GPIO_Init(GPIOC, &GPIO_InitDef);
     PAD_AFConfig(PAD_PC,GPIO_Pin_9, PAD_AF1);	// PAD Config - LED used 2nd Function
