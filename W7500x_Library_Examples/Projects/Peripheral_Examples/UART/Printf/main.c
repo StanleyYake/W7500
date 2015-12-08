@@ -48,7 +48,7 @@ int main()
 //    PAD_AFConfig(PAD_PA,GPIO_Pin_2, PAD_AF2); // PAD Config - CLKOUT used 3nd Function    
     /* UART0 and UART1 configuration*/
     UART_StructInit(&UART_InitStructure);
-    /* Configure UART0 */
+    /* Configure UART1 */
     UART_Init(UART1,&UART_InitStructure);
     /* Retarget functions for GNU Tools for ARM Embedded Processors*/
     UartPuts(UART1,"UART 1 Test(#1)\r\n");
