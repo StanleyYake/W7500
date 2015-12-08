@@ -52,9 +52,10 @@ ______________________________________________________________________________
   -  W7500 Set-up
 
 ![](http://wizwiki.net/wiki/lib/exe/fetch.php?media=products:w7500:peripherals:polling.png)
+The image has a little mistake(has two same pin PB_03). The UART1 is PC_03 and PC_02
 
-   - TXD(PA13) and  RXD(PB_03) connected.
-   - RXD(PA14) and  TXD(PB_02) connected.
+   - TXD(PA13) and  RXD(PC_03) connected.
+   - RXD(PA14) and  TXD(PC_02) connected.
   
 ______________________________________________________________________________
 
