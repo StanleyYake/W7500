@@ -64,6 +64,7 @@ int main()
     UART_Init(UART0,&UART_InitStructure);
     /* Configure UART1 */
     UART_Init(UART1,&UART_InitStructure);
+UartPuts(UART1, TxBuffer);
 
     while(TxCounter < TxBufferSize)
     {
@@ -90,6 +91,7 @@ int main()
        received by USARTz are the same */
     /* TransferStatus = FAILED, if the data transmitted from USARTy and 
        received by USARTz are different */
+printf("\nstatus = %d(FAILED = 0, PASSED = 1)\n", TransferStatus);
 
     while(1)
     {
